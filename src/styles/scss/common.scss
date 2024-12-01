@@ -1,0 +1,59 @@
+@use "./reset" as *;
+@use "./variables" as *;
+
+body {
+    background-color:$primary;
+    color:$text;
+    font-family:sans-serif; 
+}
+
+$line : rgba(white,0.5);
+
+.container {
+    margin:100px auto 0;
+    max-width:1000px;
+    width:100%;
+    
+    h1 {
+        margin-bottom:20px;
+        text-align:center;
+        border-bottom:1px solid $line;
+        padding-bottom:20px;
+    }
+
+    h2 {
+        font-weight:100;
+    }
+
+    textarea {
+        width:100%;
+        border:none;
+        border-radius:20px;
+        height:200px;
+        background-color:rgba(white,0.2);
+        padding:20px;
+        &::placeholder {
+            color:rgba(white, 0.5);
+        }
+    }
+
+    .btn {
+        margin:20px auto;
+        display:block;
+        
+        min-width:150px;
+        
+        background-color:rgb(57, 51, 132);
+        color:#fff;
+    }
+}
+
+button {
+    border:none;
+    height:36px;  
+    border-radius:5px;
+    transition:0.4s;
+    &:hover {
+        opacity:0.5;
+    }
+}
